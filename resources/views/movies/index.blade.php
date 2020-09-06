@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('main_section')
-  <h1>Lista film</h1>
+  <h1 class="red">Lista film</h1>
 
   <table border="1">
     <tr>
@@ -13,13 +13,13 @@
     @foreach ($movies as $movie)
     <tr>
       <td>{{ $movie->title }}</td>
-      <td><a href="{{ route('movies.show', $movie->id ) }}">Visualizza info</a></td>
-      <td><a href="{{ route('movies.edit', $movie->id ) }}">Modifica</a></td>
+      <td class="hover"><a href="{{ route('movies.show', $movie->id ) }}">Visualizza info</a></td>
+      <td class="hover"><a href="{{ route('movies.edit', $movie->id ) }}">Modifica</a></td>
       <td>
         <form action="{{ route('movies.destroy', $movie->id ) }}" method="post">
           @csrf
           @method('DELETE')
-          <input type="submit"value="Elimina"></a>
+          <input class="w100" type="submit"value="Elimina"></a>
         </form>
       </td>
     </tr>
@@ -27,5 +27,5 @@
 
   </table>
   <br>
-  <button type="button"><a href="{{ route('movies.create') }}">Inserisci un nuovo film</a></button>
+  <button type="button"><a class="black" href="{{ route('movies.create') }}">Nuovo film</a></button>
 @endsection

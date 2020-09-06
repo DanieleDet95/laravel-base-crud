@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('main_section')
-  <h1>Modifica il film {{ $movie->title }}</h1>
+  <h1 class="red">Modifica il film {{ $movie->title }}</h1>
 
   @if ($errors->any())
   <div class="alert alert-danger">

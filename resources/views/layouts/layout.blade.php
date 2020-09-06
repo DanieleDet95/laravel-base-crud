@@ -7,7 +7,7 @@
     <title>Laravel</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <style>
@@ -15,13 +15,18 @@
       html, body {
           background-color: #fff;
           color: black;
-          font-family: 'Nunito', sans-serif;
+          font-family: 'Montserrat', sans-serif;
           font-weight: 200;
           height: 100vh;
+          text-align: center;
           margin: 0;
           padding: 10px;
       }
 
+      h1{
+        text-transform: uppercase;
+        font-weight: bold;
+      }
       a{
         color: gray;
         text-decoration: none;
@@ -29,15 +34,44 @@
 
       table{
         width: 500px;
+        margin: 0 auto;
       }
 
       table tr,td{
-        padding: 10px;
         text-align: center;
       }
 
+      td.hover:hover{
+        background: lightgray;
+      }
+
+      input{
+        padding: 10px;
+        background: red;
+        text-align: center;
+      }
+      .w100{
+        width: 100%;
+      }
+      .p10{
+        padding: 10px;
+      }
       button{
-        padding: 5px;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      button:hover{
+        padding: 12px;
+        background: red;
+      }
+
+      .black{
+        color: black;
+      }
+
+      .red{
+        color: red;
       }
 
       .full-height {
